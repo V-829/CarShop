@@ -12,12 +12,16 @@ public class CarList {
  }
  
  public String carSounds () {
+    //empty array list to add CarList items into this list
+    //then returning this list
     ArrayList<String> list = new ArrayList<>();
+
     //for loop that goes through CarList array and prints 
     // out each car and its sound
     for (int i = 0; i < a.length ; i ++) {
         list.add("A " + a[i].getType() + " makes the noise " + a [i].getSound());
      }
+     //makes all the items in this list strings
     String text = list.toString();
     return text;
 }
