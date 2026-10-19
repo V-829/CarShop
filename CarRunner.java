@@ -8,13 +8,12 @@ public class CarRunner extends JPanel {
     {
         //clear canvas
         super.paintComponent(g);
-
-
+        //Create a CarList Object
+        CarList list = new CarList();
         //create text
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-
-        g2.drawString("text", 20, 50);
+        g2.drawString(list.carSounds(), 20, 50);
     }
     public static void main (String[]args){
         Ferrari rari = new Ferrari("VROOOM", "Ferrari");
@@ -28,7 +27,7 @@ public class CarRunner extends JPanel {
 
             frame.add(panel);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(800,600);
+            frame.setSize(1100,600);
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });
