@@ -32,7 +32,7 @@ public class CarRunner extends JPanel {
             button.addActionListener(e -> {
                 //Makes the condition true, allowing the
                 //frame to print out the text while
-                //jhiding the button
+                //hiding the button
                 check = true;
                 button.setVisible(false);
                 frame.repaint();
